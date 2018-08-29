@@ -1,9 +1,20 @@
-from config.models import Config
+from certificates.models import Certificate, Bundle, Key
 from rest_framework import serializers
 
 
-class ConfigSerializer(serializers.ModelSerializer):
+class CertificateSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Config
-        fields = ('name', 'interface', 'port', 'proxy_host', 'proxy_exception', 'root_dir',
-                  'dns_challenge', 'dns_provider', 'ssl_staging')
+        model = Certificate
+        fields = ('cert_name', 'bundle_upload', 'key_upload', 'bundle_text', 'key_text')
+
+
+class BundleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Bundle
+        fields = '__all__'
+
+
+class KeySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Key
+        fields = '__all__'

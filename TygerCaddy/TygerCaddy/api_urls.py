@@ -1,3 +1,4 @@
+from certificates.api.api_views import CertificateViewset, BundleViewset, KeyViewset
 from config.api.api_views import ConfigViewset
 from hosts.api.api_views import HostViewset
 from proxies.api.api_views import ProxyViewset, HeaderViewset
@@ -7,5 +8,8 @@ router = routers.DefaultRouter()
 router.register(r'hosts', HostViewset)
 router.register(r'proxies', ProxyViewset)
 router.register(r'headers', HeaderViewset)
+router.register(r'certificate', CertificateViewset)
+router.register(r'bundle', BundleViewset)
+router.register(r'key', KeyViewset)
 router.register(r'config', ConfigViewset)
 

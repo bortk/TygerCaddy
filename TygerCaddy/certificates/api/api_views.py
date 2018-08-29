@@ -1,8 +1,18 @@
-from certificates.models import Config
+from certificates.api.serializers import CertificateSerializer, BundleSerializer, KeySerializer
+from certificates.models import Bundle, Certificate, Key
 from rest_framework import viewsets
-from config.api.serializers import ConfigSerializer
 
 
-class ConfigViewset(viewsets.ModelViewSet):
-    queryset = Config.objects.all()
-    serializer_class = ConfigSerializer
+class CertificateViewset(viewsets.ModelViewSet):
+    queryset = Certificate.objects.all()
+    serializer_class = CertificateSerializer
+
+
+class BundleViewset(viewsets.ModelViewSet):
+    queryset = Bundle.objects.all()
+    serializer_class = BundleSerializer
+
+
+class KeyViewset(viewsets.ModelViewSet):
+    queryset = Key.objects.all()
+    serializer_class = KeySerializer
