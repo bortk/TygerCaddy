@@ -5,7 +5,7 @@ from rest_framework import serializers
 class CertificateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Certificate
-        fields = ('cert_name', 'bundle_upload', 'key_upload', 'bundle_text', 'key_text')
+        fields = ('id', 'cert_name', 'bundle_upload', 'key_upload', 'bundle_text', 'key_text')
 
 
 class BundleSerializer(serializers.ModelSerializer):
