@@ -14,6 +14,6 @@ class StatsViewSet(ViewSet):
     def list(self, request):
         ip = request.META['REMOTE_ADDR']
         queryset = {"hostsCount": host_count(), "proxyCount": proxy_count(), "headersCount": header_count(), "IP": ip,
-                    "cpu": psutil.cpu_percent()}
+                    "cpu": psutil.cpu_percent(), "memory": psutil.virtual_memory(), "uptime": psutil.boot_time()}
         serializer = DashboardSerializer(queryset, many=False)
         return Response(serializer.data)
