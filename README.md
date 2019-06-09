@@ -8,6 +8,10 @@ Caddy based reverse proxy app with web GUI
 ![alt text](https://github.com/morph1904/TygerCaddy/raw/master/TygerCaddy/assets/img/screenshot.png)
 
 # INFO!
+
+Tyger2 is coming soon! This version will no longer be maintained.
+
+
 Please be aware this is still in BETA and not suitable for a production environment.
 Although this app uses Caddy, we are not affiliated with or endorsed by the Caddy team.
 
