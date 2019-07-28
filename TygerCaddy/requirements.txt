@@ -13,6 +13,6 @@ python-dateutil==2.7.2
 pytz==2018.3
 requests==2.20.0
 six==1.11.0
-urllib3==1.24.2
+urllib3==1.25.3
 uwsgi==2.0.17
 django-active-link==0.1.4
