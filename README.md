@@ -11,9 +11,8 @@ Caddy based reverse proxy app with web GUI
 
 Tyger2 is coming soon! This version will no longer be maintained.
 
-
-Please be aware this is still in BETA and not suitable for a production environment.
-Although this app uses Caddy, we are not affiliated with or endorsed by the Caddy team.
+TygerCaddy is no longer maintained. Please use Tyger2 at the following address:
+[Tyger2 on GitHub](https://github.com/morph1904/Tyger2)
 
 ## Install Instructions (Ubuntu 16.04 +)
 Currently only ubuntu is supported by the install script
